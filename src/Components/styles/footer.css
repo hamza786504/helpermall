@@ -1,0 +1,32 @@
+.footer{
+    background-color: #3a404c;
+}
+.footer .icons .icon{
+    width: 50px;
+    margin-right: 10px;
+    aspect-ratio: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: #606672;
+    border-radius: 50%;
+}
+ul{
+    list-style-type: none;
+    padding-left: 0 !important;
+    margin-bottom: 0;
+}
+ul li{
+    min-height: 40px;
+}
+ul li a , ul li a:hover{
+    color: inherit;
+}
+footer input{
+    padding: 0.7rem;
+    margin-top: 6px;
+    height: 100%;
+    background-color: white !important;
+    border: none;
+}

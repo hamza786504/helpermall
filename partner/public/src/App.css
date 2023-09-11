@@ -1,0 +1,176 @@
+.main {
+  width: 50%;
+  margin: 50px auto;
+}
+
+.searchbtn {
+  background-color: rgb(225, 34, 34) !important;
+}
+
+/* carousel-styles.css */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(100%);
+  /* This inverts the colors to make it black */
+}
+
+.custom-dropdown:hover {
+  background-color: lightgrey;
+  /* Change the background color on hover */
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+.product-container {
+  margin: 10px;
+}
+
+.product-image {
+  width: 100%;
+  height: 300px;
+  object-fit: fill;
+  border-radius: 8px;
+}
+
+.product-name {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.product-title {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+  height: 200px;
+}
+
+.product-rating {
+  margin: 10px 0;
+}
+
+.product-rating .star {
+  color: #f39c12;
+}
+
+.product-info {
+  display: flex;
+  flex-direction: column;
+  margin-top: 8px;
+  font-size: 16px;
+}
+
+.product-platform {
+  color: #555;
+}
+
+.product-price {
+  font-size: 30px;
+  font-weight: bold;
+  color: black;
+}
+
+.buy-button {
+  background-color: #3498db;
+  color: #fff;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background-color 0.3s;
+  margin-top: 10px;
+}
+
+.buy-button:hover {
+  background-color: #f8bbd0;
+}
+
+/* Added styles for the price card */
+/* Align the rows in a single row */
+/* Add these styles to your existing CSS */
+
+/* Align the rows in a single row */
+.price-card {
+  display: flex;
+  padding: 1rem;
+  background-color: #faf4f4;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  border: none;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.price-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.actual-price {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 0.25rem;
+  color: #333;
+}
+
+.offer {
+  font-size: 20px;
+  font-weight: 400;
+  font-style: italic;
+  color: black;
+}
+
+
+.shipping-price,
+.final-price {
+  color: #666;
+}
+
+.shipping-price {
+
+  font-weight: bold;
+  color: #c45c5c;
+}
+
+.final-price {
+  font-weight: bold;
+  color: #c45c5c;
+}
+
+
+/* Styles for the dual-color button */
+.dual-color-button {
+  display: flex;
+  overflow: hidden;
+  border-radius: 15px;
+}
+
+
+.left-side {
+  flex: 1;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  border-radius: 15px;
+  padding: 0.75rem 1rem;
+  font-weight: bold;
+  justify-content: center;
+  align-items: center;
+  color: black;
+}
+
+.left-side {
+  border-radius: 15px 0 0 15px;
+}
