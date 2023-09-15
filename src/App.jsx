@@ -540,7 +540,7 @@ function App() {
         </div>
 
         <div className="products">
-          <div className="product_cover d-flex flex-row justify-content-center align-items-md-start justify-content-md-start flex-wrap flex-md-nowrap">
+          <div className="product_cover d-flex flex-lg-row flex-column justify-content-center align-items-center align-items-lg-start justify-content-md-start flex-wrap flex-md-nowrap">
             <div
               style={{ width: "300px", height: "300px", aspectRatio: "3/1" }}
             >
@@ -555,6 +555,8 @@ function App() {
                 }}
               />
             </div>
+
+            
 
             <div className="col d-flex align-items-start flex-column flex-lg-row">
               <div className="my-4 my-md-0">
@@ -571,45 +573,23 @@ function App() {
                   Mobile Phone, 8GB RAM, 512GB ROM 1TB Expandable, 6.8'' FHD
                   Screen, 6000mAh Battery, Dual Sim Card, 48+13MP Camera (Blue)
                 </div>
-                <div className="mt-3" style={{ fontSize: "15px" }}>
-                  <FontAwesomeIcon className="color_primary" icon={faTags} />{" "}
-                  Discount: 0.00
-                  <div
-                    className="vr "
-                    style={{ marginRight: "10px", marginLeft: "10px" }}
-                  />
-                  <FontAwesomeIcon className="color_primary" icon={faClock} />{" "}
-                  Shipping Time: 2 Days
-                  <div
-                    className="vr"
-                    style={{ marginRight: "10px", marginLeft: "10px" }}
-                  />
-                  <FontAwesomeIcon className="color_primary" icon={faComment} />{" "}
-                  Reviews: 128
-                  <div
-                    className="vr "
-                    style={{ marginRight: "10px", marginLeft: "10px" }}
-                  />
-                  <FontAwesomeIcon className="color_primary" icon={faTags} />{" "}
-                  Offer: 0.00
-                  <div
-                    className="vr "
-                    style={{ marginRight: "10px", marginLeft: "10px" }}
-                  />
-                  <FontAwesomeIcon
-                    className="color_primary"
-                    icon={faCheckCircle}
-                  />{" "}
-                  sold: 120
-                </div>
-                <div style={{ fontSize: "15px" }}>
-                  <FontAwesomeIcon className="color_primary" icon={faStar} />{" "}
-                  Rating: 4.5
+                <div className="mt-3 d-flex flex-wrap flex-row" style={{ fontSize: "15px"}}>
+                  <div className="d-flex align-items-center" style={{minWidth: "180px" , marginRight: "10px"}}><FontAwesomeIcon style={{marginRight: "10px"}} className="color_primary" icon={faTags} />
+                  Discount: 0.00</div>
+                  <div className="d-flex align-items-center" style={{minWidth: "180px" , marginRight: "10px"}}><FontAwesomeIcon style={{marginRight: "10px"}} className="color_primary" icon={faClock} />
+                  Shipping Time: 2 Days</div>
+                  <div className="d-flex align-items-center" style={{minWidth: "180px" , marginRight: "10px"}}><FontAwesomeIcon style={{marginRight: "10px"}} className="color_primary" icon={faComment} />
+                  Reviews: 128</div>
+                  <div className="d-flex align-items-center" style={{minWidth: "180px" , marginRight: "10px"}}><FontAwesomeIcon style={{marginRight: "10px"}} className="color_primary" icon={faTags} />
+                  Offer: 0.00</div>
+                  <div className="d-flex align-items-center" style={{minWidth: "180px" , marginRight: "10px"}}><FontAwesomeIcon style={{marginRight: "10px"}}  className="color_primary" icon={faCheckCircle} />
+                  sold: 120</div>
+                  <div className="d-flex align-items-center" style={{minWidth: "180px" , marginRight: "10px"}}><FontAwesomeIcon style={{marginRight: "10px"}} className="color_primary" icon={faStar} />
+                  Rating: 4.5</div>
                 </div>
               </div>
 
-              <div
-                className="text-end col-12 col-md"
+              <div className="text-end d-flex flex-row col-12 flex-lg-column justify-content-between align-items-center col-lg"
                 style={{ minWidth: "200px" }}
               >
                 <div className="brand_image">
@@ -624,537 +604,48 @@ function App() {
                   />
                 </div>
 
-                <table style={{ margin: "0 0 0 auto" }}>
-                  <tr>
-                    <td
-                      className="color_primary"
-                      style={{ fontWeight: "bold", fontSize: "1.5rem" }}
-                    >
-                      <FontAwesomeIcon
-                        icon={faTruck}
+                <div className="d-flex flex-column justify-content-end">
+                  <table style={{ margin: "0 0 0 auto" }}>
+                    <tr>
+                      <td
                         className="color_primary"
-                      />{" "}
-                      9.80
-                    </td>
-                  </tr>
-                  <tr>
-                    <td
-                      className="color_primary"
-                      style={{ fontWeight: "bold", fontSize: "1.5rem" }}
-                    >
-                      <FontAwesomeIcon icon={faDollarSign} /> 90.00
-                    </td>
-                  </tr>
-                  <tr>
-                    <td
-                      className="color_primary"
-                      style={{ fontWeight: "bold", fontSize: "2rem" }}
-                    >
-                      <FontAwesomeIcon
-                        icon={faDollarSign}
+                        style={{ fontWeight: "bold", fontSize: "1.5rem" }}
+                      >
+                        <FontAwesomeIcon
+                          icon={faTruck}
+                          className="color_primary"
+                        />{" "}
+                        9.80
+                      </td>
+                    </tr>
+                    <tr>
+                      <td
                         className="color_primary"
-                      />{" "}
-                      99.80
-                    </td>
-                  </tr>
-                </table>
-                <hr />
-                <button className="btn btn-outline-primary">Buy Now</button>
+                        style={{ fontWeight: "bold", fontSize: "1.5rem" }}
+                      >
+                        <FontAwesomeIcon icon={faDollarSign} /> 90.00
+                      </td>
+                    </tr>
+                    <tr>
+                      <td
+                        className="color_primary"
+                        style={{ fontWeight: "bold", fontSize: "2rem" }}
+                      >
+                        <FontAwesomeIcon
+                          icon={faDollarSign}
+                          className="color_primary"
+                        />{" "}
+                        99.80
+                      </td>
+                    </tr>
+                  </table>
+                  <hr />
+                  <button className="btn btn-outline-primary">Buy Now</button>
+                </div>
               </div>
             </div>
           </div>
-          <div className="product_cover d-flex flex-row justify-content-center align-items-md-start justify-content-md-start flex-wrap flex-md-nowrap">
-            <div
-              style={{ width: "300px", height: "300px", aspectRatio: "3/1" }}
-            >
-              <img
-                src="https://m.media-amazon.com/images/I/51QOvWdS0FL._AC_SX679_.jpg"
-                alt=""
-                style={{
-                  maxWidth: "100%",
-                  width: "100%",
-                  height: "100%",
-                  objectFit: "contain",
-                }}
-              />
-            </div>
 
-            <div className="col d-flex align-items-start flex-column flex-lg-row">
-              <div className="my-4 my-md-0">
-                <div style={{ fontSize: "22px" }}>
-                  <a href="/IPHONE 14" className="product_name">
-                    IPHONE 14
-                  </a>
-                </div>
-                <div
-                  className="mt-2 d-block"
-                  style={{ fontSize: "18px", color: "GrayText" }}
-                >
-                  xixaomiro i14Pro Max Unlocked 5G Cellphone Android Smartphone
-                  Mobile Phone, 8GB RAM, 512GB ROM 1TB Expandable, 6.8'' FHD
-                  Screen, 6000mAh Battery, Dual Sim Card, 48+13MP Camera (Blue)
-                </div>
-                <div className="mt-3" style={{ fontSize: "15px" }}>
-                  <FontAwesomeIcon className="color_primary" icon={faTags} />{" "}
-                  Discount: 0.00
-                  <div
-                    className="vr "
-                    style={{ marginRight: "10px", marginLeft: "10px" }}
-                  />
-                  <FontAwesomeIcon className="color_primary" icon={faClock} />{" "}
-                  Shipping Time: 2 Days
-                  <div
-                    className="vr"
-                    style={{ marginRight: "10px", marginLeft: "10px" }}
-                  />
-                  <FontAwesomeIcon className="color_primary" icon={faComment} />{" "}
-                  Reviews: 128
-                  <div
-                    className="vr "
-                    style={{ marginRight: "10px", marginLeft: "10px" }}
-                  />
-                  <FontAwesomeIcon className="color_primary" icon={faTags} />{" "}
-                  Offer: 0.00
-                  <div
-                    className="vr "
-                    style={{ marginRight: "10px", marginLeft: "10px" }}
-                  />
-                  <FontAwesomeIcon
-                    className="color_primary"
-                    icon={faCheckCircle}
-                  />{" "}
-                  sold: 120
-                </div>
-                <div style={{ fontSize: "15px" }}>
-                  <FontAwesomeIcon className="color_primary" icon={faStar} />{" "}
-                  Rating: 4.5
-                </div>
-              </div>
-
-              <div
-                className="text-end col-12 col-md"
-                style={{ minWidth: "200px" }}
-              >
-                <div className="brand_image">
-                  <img
-                    src={walmart}
-                    alt="brand_image"
-                    style={{
-                      width: "150px",
-                      height: "90px",
-                      cursor: "pointer",
-                    }}
-                  />
-                </div>
-
-                <table style={{ margin: "0 0 0 auto" }}>
-                  <tr>
-                    <td
-                      className="color_primary"
-                      style={{ fontWeight: "bold", fontSize: "1.5rem" }}
-                    >
-                      <FontAwesomeIcon
-                        icon={faTruck}
-                        className="color_primary"
-                      />{" "}
-                      9.80
-                    </td>
-                  </tr>
-                  <tr>
-                    <td
-                      className="color_primary"
-                      style={{ fontWeight: "bold", fontSize: "1.5rem" }}
-                    >
-                      <FontAwesomeIcon icon={faDollarSign} /> 90.00
-                    </td>
-                  </tr>
-                  <tr>
-                    <td
-                      className="color_primary"
-                      style={{ fontWeight: "bold", fontSize: "2rem" }}
-                    >
-                      <FontAwesomeIcon
-                        icon={faDollarSign}
-                        className="color_primary"
-                      />{" "}
-                      99.80
-                    </td>
-                  </tr>
-                </table>
-                <hr />
-                <button className="btn btn-outline-primary">Buy Now</button>
-              </div>
-            </div>
-          </div>
-          <div className="product_cover d-flex flex-row justify-content-center align-items-md-start justify-content-md-start flex-wrap flex-md-nowrap">
-            <div
-              style={{ width: "300px", height: "300px", aspectRatio: "3/1" }}
-            >
-              <img
-                src="https://m.media-amazon.com/images/I/51QOvWdS0FL._AC_SX679_.jpg"
-                alt=""
-                style={{
-                  maxWidth: "100%",
-                  width: "100%",
-                  height: "100%",
-                  objectFit: "contain",
-                }}
-              />
-            </div>
-
-            <div className="col d-flex align-items-start flex-column flex-lg-row">
-              <div className="my-4 my-md-0">
-                <div style={{ fontSize: "22px" }}>
-                  <a href="/IPHONE 14" className="product_name">
-                    IPHONE 14
-                  </a>
-                </div>
-                <div
-                  className="mt-2 d-block"
-                  style={{ fontSize: "18px", color: "GrayText" }}
-                >
-                  xixaomiro i14Pro Max Unlocked 5G Cellphone Android Smartphone
-                  Mobile Phone, 8GB RAM, 512GB ROM 1TB Expandable, 6.8'' FHD
-                  Screen, 6000mAh Battery, Dual Sim Card, 48+13MP Camera (Blue)
-                </div>
-                <div className="mt-3" style={{ fontSize: "15px" }}>
-                  <FontAwesomeIcon className="color_primary" icon={faTags} />{" "}
-                  Discount: 0.00
-                  <div
-                    className="vr "
-                    style={{ marginRight: "10px", marginLeft: "10px" }}
-                  />
-                  <FontAwesomeIcon className="color_primary" icon={faClock} />{" "}
-                  Shipping Time: 2 Days
-                  <div
-                    className="vr"
-                    style={{ marginRight: "10px", marginLeft: "10px" }}
-                  />
-                  <FontAwesomeIcon className="color_primary" icon={faComment} />{" "}
-                  Reviews: 128
-                  <div
-                    className="vr "
-                    style={{ marginRight: "10px", marginLeft: "10px" }}
-                  />
-                  <FontAwesomeIcon className="color_primary" icon={faTags} />{" "}
-                  Offer: 0.00
-                  <div
-                    className="vr "
-                    style={{ marginRight: "10px", marginLeft: "10px" }}
-                  />
-                  <FontAwesomeIcon
-                    className="color_primary"
-                    icon={faCheckCircle}
-                  />{" "}
-                  sold: 120
-                </div>
-                <div style={{ fontSize: "15px" }}>
-                  <FontAwesomeIcon className="color_primary" icon={faStar} />{" "}
-                  Rating: 4.5
-                </div>
-              </div>
-
-              <div
-                className="text-end col-12 col-md"
-                style={{ minWidth: "200px" }}
-              >
-                <div className="brand_image">
-                  <img
-                    src={walmart}
-                    alt="brand_image"
-                    style={{
-                      width: "150px",
-                      height: "90px",
-                      cursor: "pointer",
-                    }}
-                  />
-                </div>
-
-                <table style={{ margin: "0 0 0 auto" }}>
-                  <tr>
-                    <td
-                      className="color_primary"
-                      style={{ fontWeight: "bold", fontSize: "1.5rem" }}
-                    >
-                      <FontAwesomeIcon
-                        icon={faTruck}
-                        className="color_primary"
-                      />{" "}
-                      9.80
-                    </td>
-                  </tr>
-                  <tr>
-                    <td
-                      className="color_primary"
-                      style={{ fontWeight: "bold", fontSize: "1.5rem" }}
-                    >
-                      <FontAwesomeIcon icon={faDollarSign} /> 90.00
-                    </td>
-                  </tr>
-                  <tr>
-                    <td
-                      className="color_primary"
-                      style={{ fontWeight: "bold", fontSize: "2rem" }}
-                    >
-                      <FontAwesomeIcon
-                        icon={faDollarSign}
-                        className="color_primary"
-                      />{" "}
-                      99.80
-                    </td>
-                  </tr>
-                </table>
-                <hr />
-                <button className="btn btn-outline-primary">Buy Now</button>
-              </div>
-            </div>
-          </div>
-          <div className="product_cover d-flex flex-row justify-content-center align-items-md-start justify-content-md-start flex-wrap flex-md-nowrap">
-            <div
-              style={{ width: "300px", height: "300px", aspectRatio: "3/1" }}
-            >
-              <img
-                src="https://m.media-amazon.com/images/I/51QOvWdS0FL._AC_SX679_.jpg"
-                alt=""
-                style={{
-                  maxWidth: "100%",
-                  width: "100%",
-                  height: "100%",
-                  objectFit: "contain",
-                }}
-              />
-            </div>
-
-            <div className="col d-flex align-items-start flex-column flex-lg-row">
-              <div className="my-4 my-md-0">
-                <div style={{ fontSize: "22px" }}>
-                  <a href="/IPHONE 14" className="product_name">
-                    IPHONE 14
-                  </a>
-                </div>
-                <div
-                  className="mt-2 d-block"
-                  style={{ fontSize: "18px", color: "GrayText" }}
-                >
-                  xixaomiro i14Pro Max Unlocked 5G Cellphone Android Smartphone
-                  Mobile Phone, 8GB RAM, 512GB ROM 1TB Expandable, 6.8'' FHD
-                  Screen, 6000mAh Battery, Dual Sim Card, 48+13MP Camera (Blue)
-                </div>
-                <div className="mt-3" style={{ fontSize: "15px" }}>
-                  <FontAwesomeIcon className="color_primary" icon={faTags} />{" "}
-                  Discount: 0.00
-                  <div
-                    className="vr "
-                    style={{ marginRight: "10px", marginLeft: "10px" }}
-                  />
-                  <FontAwesomeIcon className="color_primary" icon={faClock} />{" "}
-                  Shipping Time: 2 Days
-                  <div
-                    className="vr"
-                    style={{ marginRight: "10px", marginLeft: "10px" }}
-                  />
-                  <FontAwesomeIcon className="color_primary" icon={faComment} />{" "}
-                  Reviews: 128
-                  <div
-                    className="vr "
-                    style={{ marginRight: "10px", marginLeft: "10px" }}
-                  />
-                  <FontAwesomeIcon className="color_primary" icon={faTags} />{" "}
-                  Offer: 0.00
-                  <div
-                    className="vr "
-                    style={{ marginRight: "10px", marginLeft: "10px" }}
-                  />
-                  <FontAwesomeIcon
-                    className="color_primary"
-                    icon={faCheckCircle}
-                  />{" "}
-                  sold: 120
-                </div>
-                <div style={{ fontSize: "15px" }}>
-                  <FontAwesomeIcon className="color_primary" icon={faStar} />{" "}
-                  Rating: 4.5
-                </div>
-              </div>
-
-              <div
-                className="text-end col-12 col-md"
-                style={{ minWidth: "200px" }}
-              >
-                <div className="brand_image">
-                  <img
-                    src={walmart}
-                    alt="brand_image"
-                    style={{
-                      width: "150px",
-                      height: "90px",
-                      cursor: "pointer",
-                    }}
-                  />
-                </div>
-
-                <table style={{ margin: "0 0 0 auto" }}>
-                  <tr>
-                    <td
-                      className="color_primary"
-                      style={{ fontWeight: "bold", fontSize: "1.5rem" }}
-                    >
-                      <FontAwesomeIcon
-                        icon={faTruck}
-                        className="color_primary"
-                      />{" "}
-                      9.80
-                    </td>
-                  </tr>
-                  <tr>
-                    <td
-                      className="color_primary"
-                      style={{ fontWeight: "bold", fontSize: "1.5rem" }}
-                    >
-                      <FontAwesomeIcon icon={faDollarSign} /> 90.00
-                    </td>
-                  </tr>
-                  <tr>
-                    <td
-                      className="color_primary"
-                      style={{ fontWeight: "bold", fontSize: "2rem" }}
-                    >
-                      <FontAwesomeIcon
-                        icon={faDollarSign}
-                        className="color_primary"
-                      />{" "}
-                      99.80
-                    </td>
-                  </tr>
-                </table>
-                <hr />
-                <button className="btn btn-outline-primary">Buy Now</button>
-              </div>
-            </div>
-          </div>
-          <div className="product_cover d-flex flex-row justify-content-center align-items-md-start justify-content-md-start flex-wrap flex-md-nowrap">
-            <div
-              style={{ width: "300px", height: "300px", aspectRatio: "3/1" }}
-            >
-              <img
-                src="https://m.media-amazon.com/images/I/51QOvWdS0FL._AC_SX679_.jpg"
-                alt=""
-                style={{
-                  maxWidth: "100%",
-                  width: "100%",
-                  height: "100%",
-                  objectFit: "contain",
-                }}
-              />
-            </div>
-
-            <div className="col d-flex align-items-start flex-column flex-lg-row">
-              <div className="my-4 my-md-0">
-                <div style={{ fontSize: "22px" }}>
-                  <a href="/IPHONE 14" className="product_name">
-                    IPHONE 14
-                  </a>
-                </div>
-                <div
-                  className="mt-2 d-block"
-                  style={{ fontSize: "18px", color: "GrayText" }}
-                >
-                  xixaomiro i14Pro Max Unlocked 5G Cellphone Android Smartphone
-                  Mobile Phone, 8GB RAM, 512GB ROM 1TB Expandable, 6.8'' FHD
-                  Screen, 6000mAh Battery, Dual Sim Card, 48+13MP Camera (Blue)
-                </div>
-                <div className="mt-3" style={{ fontSize: "15px" }}>
-                  <FontAwesomeIcon className="color_primary" icon={faTags} />{" "}
-                  Discount: 0.00
-                  <div
-                    className="vr "
-                    style={{ marginRight: "10px", marginLeft: "10px" }}
-                  />
-                  <FontAwesomeIcon className="color_primary" icon={faClock} />{" "}
-                  Shipping Time: 2 Days
-                  <div
-                    className="vr"
-                    style={{ marginRight: "10px", marginLeft: "10px" }}
-                  />
-                  <FontAwesomeIcon className="color_primary" icon={faComment} />{" "}
-                  Reviews: 128
-                  <div
-                    className="vr "
-                    style={{ marginRight: "10px", marginLeft: "10px" }}
-                  />
-                  <FontAwesomeIcon className="color_primary" icon={faTags} />{" "}
-                  Offer: 0.00
-                  <div
-                    className="vr "
-                    style={{ marginRight: "10px", marginLeft: "10px" }}
-                  />
-                  <FontAwesomeIcon
-                    className="color_primary"
-                    icon={faCheckCircle}
-                  />{" "}
-                  sold: 120
-                </div>
-                <div style={{ fontSize: "15px" }}>
-                  <FontAwesomeIcon className="color_primary" icon={faStar} />{" "}
-                  Rating: 4.5
-                </div>
-              </div>
-
-              <div
-                className="text-end col-12 col-md"
-                style={{ minWidth: "200px" }}
-              >
-                <div className="brand_image">
-                  <img
-                    src={walmart}
-                    alt="brand_image"
-                    style={{
-                      width: "150px",
-                      height: "90px",
-                      cursor: "pointer",
-                    }}
-                  />
-                </div>
-
-                <table style={{ margin: "0 0 0 auto" }}>
-                  <tr>
-                    <td
-                      className="color_primary"
-                      style={{ fontWeight: "bold", fontSize: "1.5rem" }}
-                    >
-                      <FontAwesomeIcon
-                        icon={faTruck}
-                        className="color_primary"
-                      />{" "}
-                      9.80
-                    </td>
-                  </tr>
-                  <tr>
-                    <td
-                      className="color_primary"
-                      style={{ fontWeight: "bold", fontSize: "1.5rem" }}
-                    >
-                      <FontAwesomeIcon icon={faDollarSign} /> 90.00
-                    </td>
-                  </tr>
-                  <tr>
-                    <td
-                      className="color_primary"
-                      style={{ fontWeight: "bold", fontSize: "2rem" }}
-                    >
-                      <FontAwesomeIcon
-                        icon={faDollarSign}
-                        className="color_primary"
-                      />{" "}
-                      99.80
-                    </td>
-                  </tr>
-                </table>
-                <hr />
-                <button className="btn btn-outline-primary">Buy Now</button>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
 
